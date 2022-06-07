@@ -1,0 +1,51 @@
+
+
+ol, ul {
+  list-style: none;
+}
+
+.ageWrap{
+  width:300px;
+  margin-right: auto;
+  margin-left: auto;
+  border:; solid red 1px
+}
+#ageGateForm{
+  color: white;
+}
+#ageGateForm ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+#ageGateForm ul li {
+  flex: 1;
+  flex-basis: 33%;
+  margin: 1em 0;
+  position: relative;
+}
+#ageGateForm .errors {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 1.25em;
+  animation: fadeIn;
+}
+
+@media only screen and (max-width: 45em) {
+  #ageGate {
+    width: 100%;
+  }
+
+  #ageGateForm {
+    width: 100%;
+  }
+  #ageGateForm li {
+    width: 100%;
+  }
+}
